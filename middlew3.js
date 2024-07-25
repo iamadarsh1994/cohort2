@@ -22,6 +22,9 @@ const age = req.query.age;
   }
 }
 
+//or just write one line here and it will used by the routes
+// app.use(isUserOldEnoughMidWare)
+//app.use gets triggered below it for all the routes , it must be above all the routes you want to use it for
 app.get("/ride1", isUserOldEnoughMidWare ,function (req, res) {
     res.json({
       message: "Ridden the ride 1",
