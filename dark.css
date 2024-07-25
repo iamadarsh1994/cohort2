@@ -1,0 +1,13 @@
+button{
+    display: flex;
+    justify-content: center;
+}
+body{
+    background-color: white;
+    color: black;
+}
+
+.dark-mode{
+    background-color: darkblue;
+    color: azure;
+}

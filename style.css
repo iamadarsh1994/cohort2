@@ -1,0 +1,34 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 20px 10px;
+  /* background-color: rgb(235, 245, 245); */
+  box-shadow: 0 0.2px;
+}
+/* .options{
+    display: flex;
+    justify-content: space-between;
+} */
+.charts {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.heading,
+.para {
+  display: flex;
+  justify-content: center;
+}
+.button {
+  display: inline-flex;
+  justify-content: center;
+  /* border: 2px solid black; */
+  background-color: aqua;
+  margin-left: 650px;
+}
+.button:hover {
+  background-color: burlywood;
+  cursor: pointer;
+}

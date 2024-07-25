@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="dark.css" />
+  </head>
+  <body class="dark-mode">
+    <p>This</p>
+    <button>o</button>
+
+    <h1>New</h1>
+    <p id="animalData"></p>
+    <button onclick="getAnimalData()">Get Animal Data</button>
+    <script src="dark.js"></script>
+    <script>
+      //  function getAnimalData() {
+      //    fetch("https://fakerapi.it/api/v1/persons").then(function (response) { return response.json()})
+      //    .then(function(data){
+      //      const pElement = document.getElementById("animalData");
+      //      pElement.textContent = JSON.stringify(data, null, 2);
+      //    });
+      //  }
+      //2. function getAnimalData(){
+      //   fetch("https://fakerapi.it/api/v1/persons").then(function(response){
+      //     response.json().then(function(finalData){
+      //       console.log(finalData)
+      //     })
+      //   })
+      // }
+      
+      //3.
+      // async function getAnimalData(){
+      //   const response = await fetch("https://fakerapi.it/api/v1/persons")
+      //   const finalData = await response.json()
+      //   console.log(finalData)
+      // }
+
+      //4. 
+      // async function getAnimalData(){
+      //   const response = await fetch("https://fakerapi.it/api/v1/persons")
+      //   const finalData = await response.json()
+      //   const pElement = document.getElementById("animalData");
+      //      pElement.textContent = JSON.stringify(finalData, null, 2);
+      // }
+
+      //5.
+      async function getAnimalData() {
+            const response = await fetch("https://fakerapi.it/api/v1/persons");
+            const finalData = await response.json();
+            const pElement = document.getElementById("animalData");
+            pElement.textContent = JSON.stringify(finalData, null, 2);
+        }
+
+        document.addEventListener("DOMContentLoaded", getAnimalData);
+    </script>
+  </body>
+</html>
