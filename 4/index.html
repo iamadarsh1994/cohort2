@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo</title>
+  </head>
+  <body>
+    <input type="text" placeholder="Add a item" id="todos" name="todo" >Todos</input>
+  <br>
+    <!-- <br />
+    <input type="text" name="description" id="desc" placeholder="description" >Description</input> -->
+    <br>
+    <br />
+    <button type="button" id="btn" onclick="clickFn()">Add to the list</button>
+
+    <br />
+<br>
+    <p id="addIt"></p>
+
+    <script>
+       
+      function clickFn() {
+        let listItem = document.getElementById("todos").value;
+   
+     let para = document.getElementById('addIt')
+   let element = document.createElement('li');
+
+   element.innerHTML = listItem;
+   para.appendChild(element);
+   let secBtn = document.createElement('button')
+   secBtn.innerHTML = "Mark as Done!"
+   secBtn.addEventListener('click', () => {secBtn.innerHTML = 'Done.'})
+   para.appendChild(secBtn);
+      }
+
+
+
+    </script>
+  </body>
+</html>
