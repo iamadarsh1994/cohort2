@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter</title>
+</head>
+<body>
+    <p id="counterValue">0</p>
+    <button id="btn" onclick="increment()">Counter Add</button>
+    <button id="btn" onclick="decrement()">Counter Minus</button>
+<script>
+    let counter = 0;
+
+function updateCounter() {
+  document.getElementById('counterValue').textContent = counter;
+}
+
+function increment() {
+  counter++;
+  updateCounter();
+}
+function decrement(){
+    counter--;
+    updateCounter()
+}
+</script>
+</body>
+</html>
