@@ -2,6 +2,7 @@
   "dependencies": {
     "express": "^4.19.2",
     "mongoose": "^8.5.1",
-    "node": "^22.5.1"
+    "node": "^22.5.1",
+    "tsc": "^2.0.4"
   }
 }
