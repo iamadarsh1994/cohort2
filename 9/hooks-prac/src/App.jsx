@@ -4,28 +4,30 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import React from 'react'
 import axios from 'axios'
+import DarkModeToggle from './components/DarkModeToggle'
 //customHooks 
-function useInterval(fn, timeout){
-   useEffect(()=>{
-    setInterval(()=>{
-      fn()
-    }, timeout)
-    return ()=> {
-      clearInterval(int)
-    }
-   }, [])
-}
+// function useInterval(fn, timeout){
+//    useEffect(()=>{
+//     setInterval(()=>{
+//       fn()
+//     }, timeout)
+//     return ()=> {
+//       clearInterval(int)
+//     }
+//    }, [])
+// }
 
 function App() {
-  const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(0);
 
-  useInterval(() => {
-    setCount(c => c + 1);
-  }, 1000)
+  // useInterval(() => {
+  //   setCount(c => c + 1);
+  // }, 1000)
 
   return (
     <>
-      Timer is at {count}
+      Timer is at
+      <DarkModeToggle />
     </>
   )
 }
