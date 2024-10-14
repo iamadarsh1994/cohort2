@@ -4,11 +4,8 @@ const mongoose = require ("mongoose")
 
 //mongodb url 
 
-<<<<<<< HEAD
-mongoose.connect("mongodb+srv://mongodb.net/")
-=======
-mongoose.connect("-----...")
->>>>>>> c101d7118117ba8c2d0fb56ea56866ffe48d6c5b
+mongoose.connect("mongodb+srv://iamadarsh1994:eflkgxMQjaIagYGA@cluster0.2noln53.mongodb.net/")
+
 const todoSchema = mongoose.Schema({
     title: String,
     description: String,
