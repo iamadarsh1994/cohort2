@@ -4,7 +4,7 @@ const mongoose = require ("mongoose")
 
 //mongodb url 
 
-mongoose.connect("mongodb+srv://iamadarsh1994:eflkgxMQjaIagYGA@cluster0.2noln53.mongodb.net/")
+mongoose.connect("mongodb+srv:mongodb.net/")
 
 const todoSchema = mongoose.Schema({
     title: String,
