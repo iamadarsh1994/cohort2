@@ -55,7 +55,7 @@ const pg_1 = require("pg");
 function getUser(email) {
     return __awaiter(this, void 0, void 0, function* () {
         const client = new pg_1.Client({
-            connectionString: 'postgresql://neondb_owner:0ienqbpX9AQc@ep-plain-surf-a5sf5hgm.us-east-2.aws.neon.tech/neondb?sslmode=require'
+            connectionString: 'postgresql://n'
         });
         try {
             yield client.connect(); // Ensure client connection is established
